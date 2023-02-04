@@ -61,15 +61,16 @@
     align-items: center;
 }
 
+
 .center3 {
-    display: flex;
-    background-color: #DD5C5C;
-    height: 50px;
-    width: 250px;
-    padding: 20px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  background-color: #DD5C5C;
+  height: 50px;
+  width: 250px;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
