@@ -16,10 +16,10 @@
 
 #child2 {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
-  background-color: #F5F5F5;
-  height: 200px;
+  background-color: white;
+  height: 800px;
   width: 75%;
   margin: 10px auto;
 }
@@ -65,9 +65,10 @@
 .center3 {
   display: flex;
   background-color: #DD5C5C;
-  height: 50px;
+  height: 40px;
   width: 250px;
   padding: 20px;
+  margin: auto;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -109,18 +110,105 @@
 }
 
 .quote {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     font-family: poppins;
-    padding: 30px;
+    padding: 40px;
     line-height: 1.8;
     font-weight: 100;
 }
 
-.quote2 {
-    text-align: center;
-    font-size: 14px;
-    color: black;
-    font-family: poppins;
+
+.card3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  height: 130px;
+  width: 96%;
+  margin: 10px auto;
+  padding: 25px;
 }
+
+.column {
+  width: 45%;
+  height: 250px;
+  background-color: grey;
+}
+
+.container-with-grid {
+  display: grid;
+  height: 550px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "footerBar footerBar"
+    "leftSidebar rightContent"
+    "topRow headerBar"
+    ;
+}
+.topRow {
+  grid-area: topRow;
+  background-image: url(../images/BAB.png);
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  width: 97%;
+  height: 250px;
+}
+
+.topRow:hover {
+  background-image: url(../images/BAB-hover.png);
+  background-repeat: no-repeat;
+}
+
+.headerBar {
+  grid-area: headerBar;
+  background-image: url(../images/DonateKind.png);
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+}
+
+.headerBar:hover {
+  background-image: url(../images/DonateKind-hover.png);
+  background-repeat: no-repeat;
+}
+
+.leftSidebar {
+  grid-area: leftSidebar;
+  background-image: url(../images/WAS.png);
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  width: 97%;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.leftSidebar:hover {
+  background-image: url(../images/WAS-hover.png);
+  background-repeat: no-repeat;
+}
+
+.rightContent {
+  grid-area: rightContent;
+  background-image: url(../images/HOC.png);
+  background-repeat: no-repeat;
+  background-size: 100% 260px;
+  margin-bottom: 15px;
+
+}
+
+.rightContent:hover {
+  background-image: url(../images/HOC-1.png);
+  background-repeat: no-repeat;
+}
+
+.footerBar {
+  grid-area: footerBar;
+  background-color: #F5F5F5;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
